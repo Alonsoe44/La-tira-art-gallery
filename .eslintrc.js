@@ -16,7 +16,9 @@ module.exports = {
     },
     ecmaVersion: "latest",
     sourceType: "module",
+    project: "./tsconfig.json",
   },
+  ignorePatterns: [".eslintrc.js"],
   plugins: ["react", "@typescript-eslint"],
   rules: {
     "react/react-in-jsx-scope": "off",
