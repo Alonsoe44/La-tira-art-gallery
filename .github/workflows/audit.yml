@@ -27,6 +27,3 @@ jobs:
 
       - name: Install modules
         run: yarn
-
-      - name: ESLint validation
-        run: npx eslint --ignore-path .gitignore .
