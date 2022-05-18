@@ -8,5 +8,6 @@ export default {
     "./src/**/*.ts",
     "!src/main.tsx",
     "!src/**/vite-env.d.ts",
+    "!src/utils/i18n.ts",
   ],
 };

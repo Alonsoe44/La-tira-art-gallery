@@ -21,7 +21,10 @@ function NavigationBarMobile() {
             </li>
             <li className="flex items-center">
               <Menu.Button>
-                <BiMenu className="text-5xl text-primaryOposite" />
+                <BiMenu
+                  className="text-5xl text-primaryOposite"
+                  aria-label="menu"
+                />
               </Menu.Button>
             </li>
           </ul>
