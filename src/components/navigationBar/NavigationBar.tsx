@@ -5,7 +5,7 @@ function NavigationBar() {
 
   return (
     <nav>
-      <ul className="flex bg-black text-white">
+      <ul className="flex bg-primary text-textInPrimary h-80">
         <li>{t("navigation.firstPage")}</li>
         <li>{t("navigation.secondPage")}</li>
         <li>

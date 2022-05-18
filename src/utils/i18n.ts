@@ -22,7 +22,10 @@ i18n
           navigation: {
             firstPage: "Explore",
             secondPage: "Artists",
+            thirdPage: "About us",
+            fourthPage: "Contact us",
           },
+          socialMediaCallToAction: "Follow us",
         },
       },
       es: {
@@ -30,7 +33,10 @@ i18n
           navigation: {
             firstPage: "Explora",
             secondPage: "Artistas",
+            thirdPage: "Sobre nosotros",
+            fourthPage: "Contactanos",
           },
+          socialMediaCallToAction: "Siguenos",
         },
       },
     },
