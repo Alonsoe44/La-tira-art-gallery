@@ -1,6 +1,6 @@
 import { Menu } from "@headlessui/react";
 import { BiMenu } from "react-icons/bi";
-import { FiChevronDown } from "react-icons/Fi";
+import { FiChevronDown } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
