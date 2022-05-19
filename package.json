@@ -7,12 +7,21 @@
     "build": "tsc && vite build",
     "test": "jest",
     "preview": "vite preview",
-    "test-coverage": "jest --watchAll --coverage"
+    "test-coverage": "jest --watchAll --coverage",
+    "test-watch": "jest --watchAll --watch"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.1",
+    "@types/i18n": "^0.13.2",
     "dotenv": "^16.0.1",
+    "framer-motion": "^6.3.3",
+    "i18next": "^21.8.2",
+    "i18next-browser-languagedetector": "^6.1.4",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-i18next": "^11.16.9",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.12",
@@ -20,6 +29,7 @@
     "@babel/preset-typescript": "^7.17.12",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.2.0",
     "@types/jest": "^27.5.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",

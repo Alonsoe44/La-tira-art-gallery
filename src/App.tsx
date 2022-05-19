@@ -1,5 +1,12 @@
+import NavigationBarMobile from "./components/navigationBar/NavigationBarMobile";
+
 function App() {
-  return <h1>hey</h1>;
+  return (
+    <>
+      <NavigationBarMobile />
+      <h2>hi</h2>
+    </>
+  );
 }
 
 export default App;
