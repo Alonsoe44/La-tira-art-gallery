@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { BrowserRouter } from "react-router-dom";
 import NavigationBarMobile from "./NavigationBarMobile";
+import "../../utils/i18Testing";
 
 describe("Given a NavigationBarMobiel componen", () => {
   describe("When it's rendered", () => {
