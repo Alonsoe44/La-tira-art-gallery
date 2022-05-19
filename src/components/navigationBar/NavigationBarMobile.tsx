@@ -1,6 +1,5 @@
 import { Menu } from "@headlessui/react";
-import { BiMenu } from "react-icons/bi";
-import { FiChevronDown } from "react-icons/fi";
+import { BiMenu, BiCaretDown } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
@@ -13,7 +12,7 @@ interface LangInterface {
 }
 
 const lang: LangInterface = {
-  es: "Espanol",
+  es: "Español",
   en: "English",
 };
 
@@ -48,9 +47,9 @@ function NavigationBarMobile() {
           <ul className="flex w-full h-full items-center px-3 justify-between">
             <li className="flex ">
               <img
-                src="src/assets/logoLaTira.svg"
+                src="/assets/logoLaTira.svg"
                 alt="logoLaTira"
-                className="w-7 h-auto"
+                className="w-[2.25rem] h-auto"
               />
             </li>
             <li className="flex items-center">
@@ -74,14 +73,14 @@ function NavigationBarMobile() {
                 transition={{ duration: 0.4 }}
               >
                 <Menu.Items className="text-primaryOposite h-5/6">
-                  <div className="relative flex w-full justify-end pr-4">
+                  <div className="relative flex w-full justify-end pr-4 pt-3">
                     <button
                       type="button"
                       onClick={() => toggleLangMenuState(!langMenuState)}
                       className="text-primaryOposite font-bold self-end text-center justify-end"
                     >
                       {lang[i18n.resolvedLanguage]}
-                      <FiChevronDown className="inline ml-1 text-xl" />
+                      <BiCaretDown className="inline ml-1 text-xl" />
                     </button>
                   </div>
                   <motion.div
