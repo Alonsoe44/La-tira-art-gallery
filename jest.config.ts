@@ -9,5 +9,7 @@ export default {
     "!src/main.tsx",
     "!src/**/vite-env.d.ts",
     "!src/utils/i18n.ts",
+    "!src/utils/i18Testing.ts",
+    "!src/jest.setup.ts",
   ],
 };
