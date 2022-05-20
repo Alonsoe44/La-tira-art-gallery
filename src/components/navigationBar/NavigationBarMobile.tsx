@@ -6,38 +6,39 @@ import { useState } from "react";
 import MobileLink from "./MobileLink/MobileLink";
 import SocialMediaLinks from "../socialMediaLinks/SocialMediaLinks";
 
-interface LangInterface {
+export interface LangInterface {
   [es: string]: string;
   en: string;
 }
 
-const lang: LangInterface = {
+export const lang: LangInterface = {
   es: "Español",
   en: "English",
 };
 
+export const subMenuAnimate = {
+  enter: {
+    opacity: 1,
+    rotateX: 0,
+    transition: {
+      duration: 0.3,
+    },
+    display: "block",
+  },
+  exit: {
+    opacity: 0,
+    rotateX: -15,
+    transition: {
+      duration: 0.3,
+      delay: 0.1,
+    },
+    transitionEnd: {
+      display: "none",
+    },
+  },
+};
+
 function NavigationBarMobile() {
-  const subMenuAnimate = {
-    enter: {
-      opacity: 1,
-      rotateX: 0,
-      transition: {
-        duration: 0.3,
-      },
-      display: "block",
-    },
-    exit: {
-      opacity: 0,
-      rotateX: -15,
-      transition: {
-        duration: 0.3,
-        delay: 0.1,
-      },
-      transitionEnd: {
-        display: "none",
-      },
-    },
-  };
   const { t, i18n } = useTranslation();
   const [langMenuState, toggleLangMenuState] = useState(false);
   return (
