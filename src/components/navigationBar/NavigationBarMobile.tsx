@@ -44,7 +44,7 @@ function NavigationBarMobile() {
   return (
     <Menu>
       {({ open }) => (
-        <div className="bg-primary sticky flex items-center h-14 w-screen ">
+        <div className="bg-primary sticky flex items-center h-14 w-screen z-50">
           <ul className="flex w-full h-full items-center px-3 justify-between">
             <li className="flex ">
               <img

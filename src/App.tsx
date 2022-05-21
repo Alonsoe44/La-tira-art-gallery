@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import NavigationBarMobile from "./components/navigationBar/NavigationBarMobile";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const [navigationComponent, setNavegationComponent] = useState(
@@ -19,7 +20,7 @@ function App() {
     <>
       {navigationComponent}
       <Routes>
-        <Route path="/" element={<h1>hi</h1>} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </>
   );

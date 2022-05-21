@@ -11,7 +11,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    debug: true,
+    debug: false,
     fallbackLng: "en",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
@@ -26,6 +26,9 @@ i18n
             fourthPage: "Contact us",
             storeLink: "Store",
           },
+          homePage: {
+            title: "La Tira art gallery",
+          },
           socialMediaCallToAction: "Follow us",
         },
       },
@@ -37,6 +40,9 @@ i18n
             thirdPage: "Sobre nosotros",
             fourthPage: "Contactanos",
             storeLink: "Tienda",
+          },
+          homePage: {
+            title: "Galeria la Tira",
           },
           socialMediaCallToAction: "Siguenos",
         },

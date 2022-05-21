@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { BiCaretDown } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { MdOutlineStorefront, MdLanguage } from "react-icons/md";
@@ -17,7 +16,7 @@ function NavigationBar() {
           <img src="assets/logoLaTira.svg" alt="Logo La Tira" />
         </div>
         <ul className="flex w-[44rem] primaryOposite justify-between items-center ">
-          <DesktopLink path="/explore" text={t("navigation.firstPage")} />
+          <DesktopLink path="/" text={t("navigation.firstPage")} />
           <DesktopLink path="/artists" text={t("navigation.secondPage")} />
           <DesktopLink path="/aboutus" text={t("navigation.thirdPage")} />
           <DesktopLink path="/contactus" text={t("navigation.fourthPage")} />
@@ -66,7 +65,7 @@ function NavigationBar() {
         </ul>
       </nav>
       <div className="h-[0.5px] bg-gray w-full" />
-      <div className="h-10 bg-primary text-primaryOposite flex justify-end px-10 items-center">
+      <div className="h-14 bg-primary text-primaryOposite flex justify-end px-10 items-center">
         <Link
           to="google.com"
           className="border rounded-xl border-primaryOposite w-40 text-center"
