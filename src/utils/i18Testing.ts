@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 const DEFAULT_LANGUAGE = "en";
 const DEFAULT_NAMESPACE = "translations";
-export default function initI18n(translations = {}) {
+export default function initI18nTesting(translations = {}) {
   i18nTesting.use(initReactI18next).init({
     lng: DEFAULT_LANGUAGE,
     fallbackLng: DEFAULT_LANGUAGE,
