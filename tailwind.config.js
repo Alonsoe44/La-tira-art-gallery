@@ -7,6 +7,11 @@ module.exports = {
       accent: "#DB769E",
       gray: "#878787",
     },
+    fontFamily: {
+      sans: ["ui-sans-serif", "system-ui"],
+      serif: ["Linden Hill", "Georgia"],
+      mono: ["ui-monospace", "SFMono-Regular"],
+    },
     extend: {},
   },
   plugins: [],
