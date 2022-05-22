@@ -13,7 +13,7 @@ interface CarouselCardProps {
 function CarouselCard({ cardData, style, cardType }: CarouselCardProps) {
   return (
     <div style={style}>
-      <Link to="./acasa">
+      <Link to={`/artcollection/${cardData._id}`}>
         <div
           className={`mx-4 relative  from-primaryOposite rounded-sm overflow-hidden font-sans ${
             window.innerWidth > 1000

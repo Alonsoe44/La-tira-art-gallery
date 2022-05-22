@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import NavigationBarMobile from "./components/navigationBar/NavigationBarMobile";
+import ArtCollectionDetailPage from "./pages/ArtCollectionDetailPage";
 import ArtcollectionsPage from "./pages/ArtcollectionsPage";
 import HomePage from "./pages/HomePage";
 
@@ -55,6 +56,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/explore" element={<ArtcollectionsPage />} />
+        <Route path="/artcollection">
+          <Route path=":id" element={<ArtCollectionDetailPage />} />
+        </Route>
       </Routes>
       <Footer />
     </>

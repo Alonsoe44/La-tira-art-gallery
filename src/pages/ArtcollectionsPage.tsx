@@ -47,7 +47,7 @@ function ArtcollectionsPage() {
                 </Link>
               </div>
               <div>
-                <Link to={`/artCollection/${artCollection._id}`}>
+                <Link to={`/artcollection/${artCollection._id}`}>
                   <img
                     className="h-[30rem] ml-10"
                     src={artCollection.bannerImage}

@@ -28,11 +28,19 @@ const getArtCollectionsPageExposition = gql`
 `;
 
 const getArtCollectionQuery = gql`
-query getArtCollection($input: ArtCollectionInput){
-  getArtCollection(input: $input){
-    _id: $input._id
+  query getArtCollection($input: ArtCollectionInput) {
+    getArtCollection(input: $input) {
+      title
+      paintings {
+        ... on Painting {
+          imageUrl
+          _id
+          description
+        }
+      }
+    }
   }
-}`;
+`;
 
 const getLatestArtCollectionQuery = gql`
   query getLatestArtCollection {
