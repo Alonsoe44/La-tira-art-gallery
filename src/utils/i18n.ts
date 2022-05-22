@@ -73,7 +73,7 @@ i18n
             cardType: "Exposicion",
           },
           artCollectionPage: {
-            mainTitle: "Coleccion de esposiciones",
+            mainTitle: "Coleccion de exposiciones",
             seeMoreText: "Ver mas",
           },
           socialMediaCallToAction: "Síguenos",

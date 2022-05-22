@@ -14,7 +14,7 @@ function NavigationBar() {
       <nav className="flex bg-primary text-primaryOposite justify-between h-24 items-center pl-16 pr-20 ">
         <div>
           <Link to="/">
-            <img src="assets/logoLaTira.svg" alt="Logo La Tira" />
+            <img src="/assets/logoLaTira.svg" alt="Logo La Tira" />
           </Link>
         </div>
         <ul className="flex w-[44rem] primaryOposite justify-between items-center ">
