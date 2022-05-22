@@ -15,6 +15,18 @@ const getArtCollectionsLandingQuery = gql`
   }
 `;
 
+const getArtCollectionsPageExposition = gql`
+  query getArtCollections {
+    getArtCollections {
+      title
+      author
+      description
+      bannerImage
+      _id
+    }
+  }
+`;
+
 const getArtCollectionQuery = gql`
 query getArtCollection($input: ArtCollectionInput){
   getArtCollection(input: $input){
@@ -49,6 +61,17 @@ export const getArtCollectionsLandingThunk = createAsyncThunk(
   "ArtCollection/getArtCollections",
   async () => {
     const artCollections = await request(apiUrl, getArtCollectionsLandingQuery);
+    return artCollections.getArtCollections;
+  }
+);
+
+export const getArtCollectionsExpositionPageThunk = createAsyncThunk(
+  "ArtCollection/getArtCollections",
+  async () => {
+    const artCollections = await request(
+      apiUrl,
+      getArtCollectionsPageExposition
+    );
     return artCollections.getArtCollections;
   }
 );

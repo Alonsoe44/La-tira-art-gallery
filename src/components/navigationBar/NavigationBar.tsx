@@ -13,10 +13,12 @@ function NavigationBar() {
     <div className="fixed z-50 w-full">
       <nav className="flex bg-primary text-primaryOposite justify-between h-24 items-center pl-16 pr-20 ">
         <div>
-          <img src="assets/logoLaTira.svg" alt="Logo La Tira" />
+          <Link to="/">
+            <img src="assets/logoLaTira.svg" alt="Logo La Tira" />
+          </Link>
         </div>
         <ul className="flex w-[44rem] primaryOposite justify-between items-center ">
-          <DesktopLink path="/" text={t("navigation.firstPage")} />
+          <DesktopLink path="/explore" text={t("navigation.firstPage")} />
           <DesktopLink path="/artists" text={t("navigation.secondPage")} />
           <DesktopLink path="/aboutus" text={t("navigation.thirdPage")} />
           <DesktopLink path="/contactus" text={t("navigation.fourthPage")} />
