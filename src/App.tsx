@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/footer";
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import NavigationBarMobile from "./components/navigationBar/NavigationBarMobile";
 import HomePage from "./pages/HomePage";
@@ -52,6 +53,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
+      <Footer />
     </>
   );
 }

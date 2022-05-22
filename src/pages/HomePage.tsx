@@ -60,7 +60,7 @@ function HomePage() {
           </p>
         </div>
       </div>
-      <article className="bg-primaryOpositeLight  w-full text-primaryOposite flex flex-col items-center">
+      <article className="bg-primaryOpositeLight  w-full text-primaryOposite flex flex-col items-center pb-10">
         <div className="lg:w-8/12 my-20 flex items-center">
           <h1 className="inline-block text-2xl font-serif w-1/3">
             {bannerState.artCollectionHomePage.title}
