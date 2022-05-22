@@ -42,8 +42,8 @@ function HomePage() {
     <>
       <ImageCarouselBanner images={images} />
       <div className="w-full flex flex-col items-center font-serif pb-20">
-        <div className="w-screen lg:w-9/12 lg:p-0 p-5">
-          <h2 className="text-primary mt-20 mb-7 text-6xl lg:ml-2">
+        <div className="w-screen lg:w-8/12 lg:p-0 p-5">
+          <h2 className="text-primary mt-20 mb-7 text-4xl lg:ml-2">
             {t("homePage.sectionOne")}
           </h2>
           <p className="text-primaryOpositeLight md:w-[47rem] text-xl mb-20 lg:ml-2">
@@ -51,6 +51,14 @@ function HomePage() {
           </p>
         </div>
         <AliceCarousel items={cardsJSX} mouseTracking infinite autoWidth />
+        <div className="w-screen lg:w-8/12 lg:p-0 p-5">
+          <h2 className="text-primary text-4xl mt-20 mb-7 ">
+            {t("homePage.sectionTwo")}
+          </h2>
+          <p className="text-primaryOpositeLight text-4xl leading-[4rem]">
+            {t("homePage.sectionTwoText")}
+          </p>
+        </div>
       </div>
     </>
   );

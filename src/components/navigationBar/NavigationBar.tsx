@@ -10,8 +10,8 @@ function NavigationBar() {
   const { t, i18n } = useTranslation();
   const [langMenuState, toggleLangMenuState] = useState(false);
   return (
-    <>
-      <nav className="flex bg-primary text-primaryOposite justify-between h-24 items-center pl-16 pr-20 fixed z-50 w-full">
+    <div className="fixed z-50 w-full">
+      <nav className="flex bg-primary text-primaryOposite justify-between h-24 items-center pl-16 pr-20 ">
         <div>
           <img src="assets/logoLaTira.svg" alt="Logo La Tira" />
         </div>
@@ -65,7 +65,7 @@ function NavigationBar() {
         </ul>
       </nav>
       <div className="h-[0.5px] bg-gray w-full fixed z-50 top-24" />
-      <div className="h-14 bg-primary text-primaryOposite flex justify-end px-10 items-center fixed z-40 w-full top-24">
+      <div className="h-14 bg-primary text-primaryOposite flex justify-end px-10 items-center z-40 top-24">
         <Link
           to="google.com"
           className="border rounded-xl border-primaryOposite w-40 text-center"
@@ -74,8 +74,7 @@ function NavigationBar() {
           {t("navigation.storeLink")}
         </Link>
       </div>
-      <div className="w-full h-32" />
-    </>
+    </div>
   );
 }
 
