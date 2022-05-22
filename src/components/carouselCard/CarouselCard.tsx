@@ -15,10 +15,10 @@ function CarouselCard({ cardData, style, cardType }: CarouselCardProps) {
     <div style={style}>
       <Link to="./acasa">
         <div
-          className={`mx-4 relative  from-primaryOposite rounded-sm overflow-y-hidden font-sans ${
+          className={`mx-4 relative  from-primaryOposite rounded-sm overflow-hidden font-sans ${
             window.innerWidth > 1000
               ? "w-[55rem] h-[33rem]"
-              : "w-full h-[20rem]"
+              : "w-full h-[20rem] -translate-x-4"
           }`}
         >
           <div className="h-full  w-full bg-gradient-to-t to-transparent z-20 from-primary  absolute " />
