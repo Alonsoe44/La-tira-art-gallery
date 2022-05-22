@@ -28,6 +28,8 @@ const getLatestArtCollectionQuery = gql`
       paintings {
         ... on Painting {
           imageUrl
+          _id
+          description
         }
       }
       title
