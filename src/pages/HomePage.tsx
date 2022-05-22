@@ -43,15 +43,15 @@ function HomePage() {
       <ImageCarouselBanner images={images} />
       <div className="w-full flex flex-col items-center font-serif pb-20">
         <div className="w-screen lg:w-8/12 lg:p-0 p-5">
-          <h2 className="text-primary mt-20 mb-7 text-4xl lg:ml-2">
+          <h2 className="text-primary mt-32 mb-7 text-4xl lg:ml-2">
             {t("homePage.sectionOne")}
           </h2>
-          <p className="text-primaryOpositeLight md:w-[47rem] text-xl mb-20 lg:ml-2">
+          <p className="text-primaryOpositeLight md:w-[47rem] text-xl mb-7 lg:ml-2">
             {t("homePage.sectionOneText")}
           </p>
         </div>
         <AliceCarousel items={cardsJSX} mouseTracking infinite autoWidth />
-        <div className="w-screen lg:w-8/12 lg:p-0 p-5">
+        <div className="w-screen lg:w-8/12 lg:p-0 p-5 my-12">
           <h2 className="text-primary text-4xl mt-20 mb-7 ">
             {t("homePage.sectionTwo")}
           </h2>
@@ -60,6 +60,30 @@ function HomePage() {
           </p>
         </div>
       </div>
+      <article className="bg-primaryOpositeLight  w-full text-primaryOposite flex flex-col items-center">
+        <div className="lg:w-8/12 my-20 flex items-center">
+          <h1 className="inline-block text-2xl font-serif w-1/3">
+            {bannerState.artCollectionHomePage.title}
+          </h1>
+          <div className="w-full h-[0.5px] bg-gray inline" />
+        </div>
+        <div className="flex flex-wrap w-full sm:w-8/12 md:justify-between justify-center">
+          {(
+            bannerState.artCollectionHomePage.paintings as PaintingInterface[]
+          ).map((painting) => (
+            <div
+              className="w-[80%] md:w-[calc(49%-10px)] lg:w-[calc(33%-10px)] py-3"
+              key={painting._id}
+            >
+              <img
+                className="w-full"
+                src={painting.imageUrl}
+                alt={painting.description}
+              />
+            </div>
+          ))}
+        </div>
+      </article>
     </>
   );
 }
