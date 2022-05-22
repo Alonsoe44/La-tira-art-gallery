@@ -31,6 +31,7 @@ i18n
             sectionOne: "Highlights",
             sectionOneText:
               "We are pleased to welcome you to our gallery. From now on you can meet our most recent exhibition made by our artists, which we put at your disposal.",
+            cardType: "Exposition",
           },
           socialMediaCallToAction: "Follow us",
         },
@@ -49,6 +50,7 @@ i18n
             sectionOne: "Destacados",
             sectionOneText:
               "Nos complace darle la bienvenida a nuestra galeria. A partir de ahora puede conocer, nuestra mas reciente exposicion hecha por nuestros artistas,  que ponemos a su disposición.",
+            cardType: "Exposicion",
           },
           socialMediaCallToAction: "Siguenos",
         },

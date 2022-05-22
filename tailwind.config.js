@@ -4,6 +4,7 @@ module.exports = {
     colors: {
       primary: "#0f0f0f",
       primaryOposite: "#e9e9e9",
+      primaryOpositeLight: "#454545",
       accent: "#DB769E",
       gray: "#878787",
     },

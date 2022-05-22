@@ -1,10 +1,16 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import AliceCarousel from "react-alice-carousel";
 import ImageCarouselBanner from "../components/imageCarousel/imageCarouselBanner";
 import ArtCollectionStateInterface from "../interfaces/ArtCollectionStateInterface";
 import PaintingInterface from "../interfaces/PaintingInterface";
-import { getBannerLatestCollectionThunk } from "../reduxToolKit/artCollection/artCollectionThunk";
+import {
+  getArtCollectionsLandingThunk,
+  getBannerLatestCollectionThunk,
+} from "../reduxToolKit/artCollection/artCollectionThunk";
 import { useAppDispatch, useAppSelector } from "../reduxToolKit/hooks";
+import "react-alice-carousel/lib/alice-carousel.css";
+import CarouselCard from "../components/carouselCard/CarouselCard";
 
 function HomePage() {
   const bannerState = useAppSelector(
@@ -20,20 +26,31 @@ function HomePage() {
 
   useEffect(() => {
     dispatch(getBannerLatestCollectionThunk());
+    dispatch(getArtCollectionsLandingThunk());
   }, []);
+
+  const cardsJSX = bannerState.artCollections.map((artCollection) => (
+    <CarouselCard
+      cardData={{ ...artCollection }}
+      key={artCollection._id}
+      style={{ width: window.innerWidth > 1000 ? 900 : window.innerWidth }}
+      cardType={t("homePage.cardType")}
+    />
+  ));
 
   return (
     <>
       <ImageCarouselBanner images={images} />
-      <div className="w-screen flex justify-center font-serif">
-        <div className="xl:w-9/12">
-          <h2 className="text-primary my-10 text-4xl ">
+      <div className="w-full flex flex-col items-center font-serif pb-20">
+        <div className="w-screen lg:w-9/12 lg:p-0 p-5">
+          <h2 className="text-primary mt-20 mb-7 text-6xl lg:ml-2">
             {t("homePage.sectionOne")}
           </h2>
-          <p className="text-primary w-[50rem] text-xl">
+          <p className="text-primaryOpositeLight md:w-[47rem] text-xl mb-20 lg:ml-2">
             {t("homePage.sectionOneText")}
           </p>
         </div>
+        <AliceCarousel items={cardsJSX} mouseTracking infinite autoWidth />
       </div>
     </>
   );

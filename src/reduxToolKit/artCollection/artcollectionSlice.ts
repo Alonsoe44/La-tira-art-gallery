@@ -2,7 +2,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import ArtCollectionStateInterface from "../../interfaces/ArtCollectionStateInterface";
 import {
-  getArtCollectionsThunk,
+  getArtCollectionsLandingThunk,
   getArtCollectionThunk,
   getBannerLatestCollectionThunk,
 } from "./artCollectionThunk";
@@ -29,11 +29,11 @@ const artCollectionsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getArtCollectionsThunk.fulfilled, (state, action) => {
+      .addCase(getArtCollectionsLandingThunk.fulfilled, (state, action) => {
         state.artCollections = action.payload;
         state.isLoading = false;
       })
-      .addCase(getArtCollectionsThunk.pending, (state) => {
+      .addCase(getArtCollectionsLandingThunk.pending, (state) => {
         state.isLoading = true;
       })
       .addCase(getArtCollectionThunk.fulfilled, (state, action) => {
