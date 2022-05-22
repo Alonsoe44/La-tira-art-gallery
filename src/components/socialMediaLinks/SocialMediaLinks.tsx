@@ -6,7 +6,7 @@ function SocialMediaLinks() {
   const { t } = useTranslation();
   return (
     <section className="h-fit flex flex-col">
-      <h3 className="text-2xl">{t("socialMediaCallToAction")}</h3>
+      <h3 className="text-3xl">{t("socialMediaCallToAction")}</h3>
       <ul className="h-fit flex flew-row mt-3">
         <li>
           <Link to="none">

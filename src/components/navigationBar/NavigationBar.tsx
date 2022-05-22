@@ -33,10 +33,10 @@ function NavigationBar() {
             <motion.div
               initial="exit"
               variants={subMenuAnimate}
-              className="absolute right-19 top-16 flex flex-col"
+              className="absolute right-19 top-16 flex flex-col z-50"
               animate={langMenuState ? "enter" : "exit"}
             >
-              <ul className="bg-primaryOposite rounded-md text-primary p-3">
+              <ul className="bg-primaryOposite rounded-md text-primary p-3 ">
                 <li>
                   <button
                     type="button"
@@ -64,8 +64,8 @@ function NavigationBar() {
           </li>
         </ul>
       </nav>
-      <div className="h-[0.5px] bg-gray w-full fixed z-50 top-24" />
-      <div className="h-14 bg-primary text-primaryOposite flex justify-end px-10 items-center z-40 top-24">
+      <div className="h-[0.5px] bg-gray w-full fixed z-40 top-24" />
+      <div className="h-14 bg-primary text-primaryOposite flex justify-end px-10 items-center z-30 top-24">
         <Link
           to="google.com"
           className="border rounded-xl border-primaryOposite w-40 text-center"

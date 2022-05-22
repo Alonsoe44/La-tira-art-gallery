@@ -37,6 +37,16 @@ i18n
             cardType: "Exposition",
           },
           socialMediaCallToAction: "Follow us",
+          footer: {
+            payment: "Cash on delivery",
+            titleOne: "Commercial conditions",
+            titleTwo: "Payment methods",
+            titleThree: "Social media",
+            conditionOne: "All pieces include Iva",
+            conditionTwo: "Delivery expenses are payed by the costumer",
+            conditionThree:
+              "The paintings will be delivered to the requested direction the client sended via e-mail",
+          },
         },
       },
       es: {
@@ -58,7 +68,17 @@ i18n
               "Hay muchas razones para visitar la tira. Tantas obras que descubrir en esta fabulosa galleria que esta abriendo un nuevo local. Asi que visitanos en nuestras nuevas instalaciones . Diversas exposiciones con arte nacional e internacional, nuestro mas reciente colaboracion con Yendrys Salazar Falcon nos trae Guajira Guantanamero",
             cardType: "Exposicion",
           },
-          socialMediaCallToAction: "Siguenos",
+          socialMediaCallToAction: "Síguenos",
+          footer: {
+            payment: "Contra reembolso",
+            titleOne: "Condiciones comerciales",
+            titleTwo: "Formas de pago",
+            titleThree: "Redes sociales",
+            conditionOne: "Todas las obras incluye el IVA",
+            conditionTwo: "Los portes de envío estarán a cargo del cliente.",
+            conditionThree:
+              "Las obras serán enviadas a la dirección indicada por el cliente via e-mail",
+          },
         },
       },
     },
