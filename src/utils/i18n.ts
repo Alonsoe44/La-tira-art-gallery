@@ -36,6 +36,10 @@ i18n
               "There are many reasons to visit La tira. So many works to discover in this fabulous gallery that is opening a new location. So visit us in our new facilities. Various exhibitions with national and international art, our most recent collaboration with Yendrys Salazar Falcon brings us Guajira Guantanamero",
             cardType: "Exposition",
           },
+          artCollectionPage: {
+            mainTitle: "Collection of expositions",
+            seeMoreText: "See more ",
+          },
           socialMediaCallToAction: "Follow us",
           footer: {
             payment: "Cash on delivery",
@@ -67,6 +71,10 @@ i18n
             sectionTwoText:
               "Hay muchas razones para visitar la tira. Tantas obras que descubrir en esta fabulosa galleria que esta abriendo un nuevo local. Asi que visitanos en nuestras nuevas instalaciones . Diversas exposiciones con arte nacional e internacional, nuestro mas reciente colaboracion con Yendrys Salazar Falcon nos trae Guajira Guantanamero",
             cardType: "Exposicion",
+          },
+          artCollectionPage: {
+            mainTitle: "Coleccion de esposiciones",
+            seeMoreText: "Ver mas",
           },
           socialMediaCallToAction: "Síguenos",
           footer: {

@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import NavigationBarMobile from "./components/navigationBar/NavigationBarMobile";
+import ArtcollectionsPage from "./pages/ArtcollectionsPage";
 import HomePage from "./pages/HomePage";
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
       <div className={`w-full ${isMobile ? "h-14" : "h-36"}`} />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/explore" element={<ArtcollectionsPage />} />
       </Routes>
       <Footer />
     </>
