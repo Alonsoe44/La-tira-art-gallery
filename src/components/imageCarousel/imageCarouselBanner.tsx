@@ -39,7 +39,7 @@ function ImageCarouselBanner({ images }: ImageCarouselProps) {
   return (
     <div className="relative h-[30rem] overflow-y-hidden items-center justify-center flex ">
       <div className="absolute bg-primary opacity-40 z-10 h-full w-full" />
-      <h1 className="text-primaryOposite text-5xl sm:text-6xl ml-4 sm:left-24 absolute z-20 bottom-20 font-serif">
+      <h1 className="text-primaryOposite text-5xl sm:text-8xl ml-4 sm:left-24 absolute z-20 bottom-20 font-serif">
         {t("homePage.title")}
       </h1>
       {window.innerWidth > 1000 && (

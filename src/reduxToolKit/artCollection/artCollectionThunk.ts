@@ -3,16 +3,14 @@ import request, { gql } from "graphql-request";
 
 const apiUrl = import.meta.env.VITE_API_URL;
 
-const getArtCollectionsQuery = gql`
+const getArtCollectionsLandingQuery = gql`
   query getArtCollections {
     getArtCollections {
       title
       author
       smallDescription
-      description
       bannerImage
       _id
-      paintings
     }
   }
 `;
@@ -45,10 +43,10 @@ export const getBannerLatestCollectionThunk = createAsyncThunk(
   }
 );
 
-export const getArtCollectionsThunk = createAsyncThunk(
+export const getArtCollectionsLandingThunk = createAsyncThunk(
   "ArtCollection/getArtCollections",
   async () => {
-    const artCollections = await request(apiUrl, getArtCollectionsQuery);
+    const artCollections = await request(apiUrl, getArtCollectionsLandingQuery);
     return artCollections.getArtCollections;
   }
 );
