@@ -11,11 +11,14 @@
     "test-watch": "jest --watchAll --watch"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@headlessui/react": "^1.6.1",
     "@reduxjs/toolkit": "^1.8.1",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@types/i18n": "^0.13.2",
+    "@uiball/loaders": "^1.2.6",
     "dotenv": "^16.0.1",
+    "formik": "^2.2.9",
     "framer-motion": "^6.3.3",
     "graphql-request": "^4.2.0",
     "i18next": "^21.8.2",

@@ -36,6 +36,20 @@ i18n
               "There are many reasons to visit La tira. So many works to discover in this fabulous gallery that is opening a new location. So visit us in our new facilities. Various exhibitions with national and international art, our most recent collaboration with Yendrys Salazar Falcon brings us Guajira Guantanamero",
             cardType: "Exposition",
           },
+          contactUsPage: {
+            title: "Contact us",
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            labelOne: "Name",
+            labelTwo: "Email",
+            labelThree: "How can we help you?",
+            sendText: "Send",
+            infoOne: "Address",
+            infoTwo: "Telephone",
+            waitText: "Almost there ...",
+            messageSuccess: "Message sent",
+            messageSuccessText:
+              "Thank you for your message. We will contact you as soon as possible.",
+          },
           artCollectionPage: {
             mainTitle: "Collection of expositions",
             seeMoreText: "See more ",
@@ -77,6 +91,20 @@ i18n
             seeMoreText: "Ver mas",
           },
           socialMediaCallToAction: "Síguenos",
+          contactUsPage: {
+            title: "Contactanos",
+            waitText: "Ya casi ....",
+            messageSuccess: "Mensaje enviado",
+            messageSuccessText:
+              "Gracias por contactarnos, en breve nos pondremos en contacto con usted",
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            labelOne: "Nombre",
+            labelTwo: "Correo",
+            labelThree: "Como podemos ayudarte?",
+            sendText: "Enviar",
+            infoOne: "Direccion",
+            infoTwo: "Telefono",
+          },
           footer: {
             payment: "Contra reembolso",
             titleOne: "Condiciones comerciales",
