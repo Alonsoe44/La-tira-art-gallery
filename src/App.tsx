@@ -8,6 +8,7 @@ import NavigationBarMobile from "./components/navigationBar/NavigationBarMobile"
 import AboutUsPage from "./pages/AboutUsPage";
 import ArtCollectionDetailPage from "./pages/ArtCollectionDetailPage";
 import ArtcollectionsPage from "./pages/ArtcollectionsPage";
+import ContactUsPage from "./pages/ContactUsPage";
 import HomePage from "./pages/HomePage";
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           <Route path=":id" element={<ArtCollectionDetailPage />} />
         </Route>
         <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/contactUs" element={<ContactUsPage />} />
       </Routes>
       <Footer />
     </>

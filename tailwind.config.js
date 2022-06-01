@@ -7,6 +7,10 @@ module.exports = {
       primaryOpositeLight: "#454545",
       accent: "#DB769E",
       gray: "#878787",
+      accentLight: "#F4E6EC",
+      grayInput: "#EDEDED",
+      success: "#469049",
+      highlightCard: "#ECECEC",
     },
     fontFamily: {
       sans: ["ui-sans-serif", "system-ui"],
