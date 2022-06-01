@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import NavigationBarMobile from "./components/navigationBar/NavigationBarMobile";
+import AboutUsPage from "./pages/AboutUsPage";
 import ArtCollectionDetailPage from "./pages/ArtCollectionDetailPage";
 import ArtcollectionsPage from "./pages/ArtcollectionsPage";
 import HomePage from "./pages/HomePage";
@@ -59,6 +60,7 @@ function App() {
         <Route path="/artcollection">
           <Route path=":id" element={<ArtCollectionDetailPage />} />
         </Route>
+        <Route path="/aboutus" element={<AboutUsPage />} />
       </Routes>
       <Footer />
     </>

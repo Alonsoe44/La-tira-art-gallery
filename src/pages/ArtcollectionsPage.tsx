@@ -31,9 +31,11 @@ function ArtcollectionsPage() {
               key={artCollection._id}
               className="flex my-20 w-full justify-between"
             >
-              <div className="flex flex-col w-1/2 justify-center">
+              <div className="flex flex-col w-1/2 justify-center mr-10">
                 <h2 className="text-3xl mb-5">{artCollection.title}</h2>
-                <p className="text-gray text-xl">{artCollection.description}</p>
+                <p className="text-gray text-xl line-clamp-6">
+                  {artCollection.description}
+                </p>
                 <Link
                   to={`/artCollection/${artCollection._id}`}
                   className="mt-3"
