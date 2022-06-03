@@ -11,11 +11,13 @@ module.exports = {
       grayInput: "#EDEDED",
       success: "#469049",
       highlightCard: "#ECECEC",
+      bigSign: "#FF0000",
     },
     fontFamily: {
       sans: ["ui-sans-serif", "system-ui"],
       serif: ["Linden Hill", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
+      bebas: ["Bebas Neue", "sans-serif"],
     },
     extend: {},
   },
