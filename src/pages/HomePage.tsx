@@ -11,6 +11,7 @@ import {
 import { useAppDispatch, useAppSelector } from "../reduxToolKit/hooks";
 import "react-alice-carousel/lib/alice-carousel.css";
 import CarouselCard from "../components/carouselCard/CarouselCard";
+import MovedSign from "../components/movedSign/MovedSign";
 
 function HomePage() {
   const bannerState = useAppSelector(
@@ -41,6 +42,7 @@ function HomePage() {
   return (
     <>
       <ImageCarouselBanner images={images} />
+      <MovedSign />
       <div className="w-full flex flex-col items-center font-serif pb-20">
         <div className="w-screen lg:w-8/12 lg:p-0 p-5">
           <h2 className="text-primary mt-32 mb-7 text-4xl lg:ml-2">

@@ -62,7 +62,7 @@ function App() {
           <Route path=":id" element={<ArtCollectionDetailPage />} />
         </Route>
         <Route path="/aboutus" element={<AboutUsPage />} />
-        <Route path="/contactUs" element={<ContactUsPage />} />
+        <Route path="/contactus" element={<ContactUsPage />} />
       </Routes>
       <Footer />
     </>
