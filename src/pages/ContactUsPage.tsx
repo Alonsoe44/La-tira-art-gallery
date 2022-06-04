@@ -34,14 +34,14 @@ function ContactUsPage() {
           <h1 className="text-4xl mb-16">{t("contactUsPage.title")}</h1>
           <p className="mb-16 text-gray ">{t("contactUsPage.text")}</p>
           <div>
-            <ul className="flex w-full ">
-              <li className="bg-accentLight mr-5 py-7 rounded-xl flex flex-col items-center justify-around p-5">
+            <ul className="flex w-full lg:flex-row flex-col ">
+              <li className="bg-accentLight mr-5 py-7 rounded-xl w-full lg:w-auto flex flex-col items-center justify-around p-5">
                 <HiLocationMarker className="text-5xl " />
                 <span className="text-gray">{t("contactUsPage.infoOne")}</span>
                 <span>C/. Francesc Rubio</span>
                 <span>Nro 4</span>
               </li>
-              <li className="bg-accentLight py-7 rounded-xl flex flex-col items-center justify-around p-5">
+              <li className="bg-accentLight py-7 rounded-xl flex flex-col items-center justify-around p-5 mt-5 lg:mt-0">
                 <FaPhone className="text-4xl " />
                 <span className="text-gray">{t("contactUsPage.infoTwo")}</span>
                 <span>+34 962 277 500</span>

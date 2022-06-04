@@ -4,7 +4,7 @@ import SocialMediaLinks from "../socialMediaLinks/SocialMediaLinks";
 function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className="bg-primary flex text-primaryOposite justify-center font-serif py-10">
+    <footer className="bg-primary flex text-primaryOposite justify-center font-mono py-10">
       <div className="lg:w-8/12 w-full pl-10 xl:pl-0 flex justify-between xl:flex-row flex-col">
         <div className="flex flex-col ">
           <h3 className="text-3xl">{t("footer.titleOne")}</h3>

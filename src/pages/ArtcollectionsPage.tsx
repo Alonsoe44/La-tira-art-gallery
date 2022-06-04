@@ -21,17 +21,17 @@ function ArtcollectionsPage() {
 
   return (
     <article className="flex justify-center">
-      <div className="lg:w-8/12 flex flex-col">
+      <div className="md:w-8/12 flex flex-col pl-5 md:pl-0 xl:pt-14">
         <h1 className="text-accent text-5xl my-10">
           {t("artCollectionPage.mainTitle")}
         </h1>
-        <ul className="flex flex-col">
+        <ul className="flex flex-col items-center">
           {artCollectionsData.map((artCollection) => (
             <li
               key={artCollection._id}
-              className="flex my-20 w-full justify-between"
+              className="flex xl:flex-row flex-col my-20 w-full justify-between"
             >
-              <div className="flex flex-col w-1/2 justify-center mr-10">
+              <div className="flex flex-col sm:w-1/2 justify-center mr-10 mb-10">
                 <h2 className="text-3xl mb-5">{artCollection.title}</h2>
                 <p className="text-gray text-xl line-clamp-6">
                   {artCollection.description}
@@ -51,7 +51,7 @@ function ArtcollectionsPage() {
               <div>
                 <Link to={`/artcollection/${artCollection._id}`}>
                   <img
-                    className="h-[30rem] ml-10"
+                    className="xl:h-[30rem] w-[calc(90%-2rem)] xl:w-auto xl:ml-10"
                     src={artCollection.bannerImage}
                     alt={artCollection.title}
                   />
