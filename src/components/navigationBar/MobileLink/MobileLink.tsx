@@ -1,22 +1,22 @@
-import { Menu } from "@headlessui/react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 interface MobileLinkProps {
   text: string;
+  path: string;
+  closeMenuAction: (arg0: boolean) => void;
 }
-function MobileLink({ text }: MobileLinkProps) {
+function MobileLink({ text, path, closeMenuAction }: MobileLinkProps) {
   return (
     <li className="my-10">
-      <Menu.Item>
-        {({ active }) => (
-          <Link
-            className={`${active && "bg-blue-500"} text-3xl font-bold`}
-            to="/account-settings"
-          >
-            {text}
-          </Link>
-        )}
-      </Menu.Item>
+      <NavLink
+        onClick={() => closeMenuAction(false)}
+        className={({ isActive }) =>
+          `${isActive && "text-accent "} text-3xl font-bold `
+        }
+        to={path}
+      >
+        {text}
+      </NavLink>
     </li>
   );
 }

@@ -16,8 +16,8 @@ function ArtCollectionDetailPage() {
   }, []);
   const artCollectionData = stateArtcollection.artCollection;
   return (
-    <article className="bg-primaryOpositeLight  w-full text-primaryOposite flex flex-col items-center pb-10">
-      <div className="lg:w-8/12 my-20 flex items-center">
+    <article className="bg-primaryOpositeLight  w-full text-primaryOposite flex flex-col items-center pb-10 ">
+      <div className="lg:w-8/12 my-20 flex xl:items-center xl:flex-row flex-col text-center items-start ">
         <h1 className="inline-block text-2xl font-serif w-1/3">
           {artCollectionData.title}
         </h1>

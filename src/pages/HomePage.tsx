@@ -63,11 +63,11 @@ function HomePage() {
         </div>
       </div>
       <article className="bg-primaryOpositeLight  w-full text-primaryOposite flex flex-col items-center pb-10">
-        <div className="lg:w-8/12 my-20 flex items-center">
+        <div className="lg:w-8/12 my-20 flex xl:items-center xl:flex-row flex-col text-center items-start">
           <h1 className="inline-block text-2xl font-serif w-1/3">
             {bannerState.artCollectionHomePage.title}
           </h1>
-          <div className="w-full h-[0.5px] bg-gray inline" />
+          <div className="w-full h-[0.5px] bg-gray inline mt-3" />
         </div>
         <div className="flex flex-wrap w-full sm:w-8/12 md:justify-between justify-center">
           {(
