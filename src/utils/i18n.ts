@@ -20,7 +20,7 @@ i18n
       en: {
         translation: {
           navigation: {
-            firstPage: "Explore",
+            firstPage: "Collections",
             secondPage: "Artists",
             thirdPage: "About us",
             fourthPage: "Contact us",
@@ -40,7 +40,7 @@ i18n
           homePage: {
             movedText: "Now in",
             movedTitle: "We've moved!",
-            movedAddress: "Calle Francesc Rubio Nro 4",
+            movedAddress: "Calle Francesc Rubio Nº 4",
             title: "La Tira art gallery",
             sectionOne: "Highlights",
             sectionOneText:
@@ -84,7 +84,7 @@ i18n
       es: {
         translation: {
           navigation: {
-            firstPage: "Explora",
+            firstPage: "Exposiciones",
             secondPage: "Artistas",
             thirdPage: "Sobre nosotros",
             fourthPage: "Contactanos",
@@ -104,7 +104,7 @@ i18n
           homePage: {
             movedTitle: "Nos hemos trasladado",
             movedText: "Ahora en",
-            movedAddress: "Calle Francesc Rubio Nro 4",
+            movedAddress: "Calle Francesc Rubio Nº 4",
             title: "Galeria la Tira",
             sectionOne: "Destacados",
             sectionOneText:
