@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import artCollectionsReducer from "./artCollection/artcollectionSlice";
+import authorsReducer from "./author/authorsSlice";
 
 const store = configureStore({
   reducer: {
     artCollections: artCollectionsReducer,
+    authors: authorsReducer,
   },
 });
 

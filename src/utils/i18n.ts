@@ -26,16 +26,19 @@ i18n
             fourthPage: "Contact us",
             storeLink: "Store",
           },
+          authorsPage: {
+            mainTitle: "Artists",
+            seeMoreText: "See more",
+          },
           aboutUsPage: {
             title: "We are la tira ",
             subTitleOne: "Mission",
-            subTitleOneContent:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            subTitleOneContent: "Bring art to every person in Xativa",
             subTitleTwo: "Vision",
             subTitleTwoContent:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+              "Create a space to promote and appreciate art and help customers find the painting they need",
             resume:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+              "Vd Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           },
           homePage: {
             movedText: "Now in",
@@ -52,7 +55,7 @@ i18n
           },
           contactUsPage: {
             title: "Contact us",
-            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            text: "Do you have any questions about our gallery, do you need more information about a painting or maybe you just wanna say hi, don't doubt and reach out to us by filling out this form",
             labelOne: "Name",
             labelTwo: "Email",
             labelThree: "How can we help you?",
@@ -90,14 +93,17 @@ i18n
             fourthPage: "Contactanos",
             storeLink: "Tienda",
           },
+          authorsPage: {
+            mainTitle: "Artistas",
+            seeMoreText: "Ver más",
+          },
           aboutUsPage: {
             title: "Nosotros somos la tira",
             subTitleOne: "Mision",
-            subTitleOneContent:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            subTitleOneContent: "Llevar arte a todas las personas en Xativa",
             subTtileTwo: "Vision",
             subTitleTwoContent:
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+              "Crear un espacio para divulgar y apreciar el arte y ayudar al cliente a encontrar la pintura que necesita",
             resume:
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
           },
@@ -125,7 +131,7 @@ i18n
             messageSuccess: "Mensaje enviado",
             messageSuccessText:
               "Gracias por contactarnos, en breve nos pondremos en contacto con usted",
-            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            text: "¿Tiene alguna pregunta sobre nuestra galería, necesita más información sobre una pintura o tal vez solo quiere saludarnos? No lo dude y comuníquese con nosotros completando este formulario",
             labelOne: "Nombre",
             labelTwo: "Correo",
             labelThree: "Como podemos ayudarte?",

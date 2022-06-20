@@ -5,7 +5,7 @@ module.exports = {
       primary: "#0f0f0f",
       primaryOposite: "#e9e9e9",
       primaryOpositeLight: "#454545",
-      accent: "#DB769E",
+      accent: "#A84556",
       gray: "#878787",
       accentLight: "#F4E6EC",
       grayInput: "#EDEDED",

@@ -8,19 +8,23 @@ const getAuthorsQuery = gql`
     getAuthors {
       name
       textDescription
-      paintings
       _id
     }
   }
 `;
 
 const getAuthorQuery = gql`
-  query getAuthor($input: AuthorInput) {
+  query GetAuthor($input: AuthorInput) {
     getAuthor(input: $input) {
       name
       textDescription
-      paintings
-      _id
+      paintings {
+        imageUrl
+        title
+        author
+        description
+        _id
+      }
     }
   }
 `;
@@ -35,7 +39,7 @@ export const getAuthorsThunk = createAsyncThunk(
 
 export const getAuthorThunk = createAsyncThunk(
   "Authors/getAuthor",
-  async (id) => {
+  async (id: string) => {
     const response = await request(apiUrl, getAuthorQuery, {
       input: { _id: id },
     });
