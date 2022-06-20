@@ -20,17 +20,17 @@ function AboutUsPage() {
           className="z-10 absolute  w-screen xl:-bottom-[20rem] 2xl:-bottom-[35rem] "
         />
       </div>
-      <div className="flex w-full justify-center py-8 md:py-32 overflow-x-hidden relative">
+      <div className="flex w-full justify-center py-8 md:py-32 overflow-hidden relative">
         <div className="flex justify-start w-8/12">
           <div className="lg:w-6/12 flex flex-col my-20 relative">
-            <h3 className="text-xl mb-10">{t("aboutUsPage.subTitleOne")}</h3>
-            <div className="text-gray">
+            <h3 className="text-2xl mb-10">{t("aboutUsPage.subTitleOne")}</h3>
+            <div className="text-gray text-xl">
               {t("aboutUsPage.subTitleOneContent")}
             </div>
-            <h3 className="text-xl mt-20 mb-10">
+            <h3 className="text-2xl mt-20 mb-10">
               {t("aboutUsPage.subTitleTwo")}
             </h3>
-            <div className="text-gray">
+            <div className="text-gray text-xl">
               {t("aboutUsPage.subTitleTwoContent")}
             </div>
             <div className="w-3 h-none 2xl:h-[10rem]" />
